@@ -1,0 +1,100 @@
+h1{
+    font-family: arial;
+    font-size: 30px; 
+    color: rgb(0, 0, 0);
+
+}
+
+div{
+    margin-left: 15px;
+    line-height: 50%;
+    font-family: helvetica;
+    color: rgb(0, 0, 0);
+}
+
+.alignleft {
+    float: left;
+    text-align:left;
+    width: auto;
+    font-size: 22px; 
+    color: rgb(0, 0, 0);
+}
+
+.aligncenter {
+    float: left;
+    text-align:center;
+    font-size: 22px; 
+    color: rgb(0, 0, 0);
+    margin-left: 30px;
+}
+.alignright {
+    float: left;
+    text-align:right;
+    font-size: 22px; 
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    
+}
+
+#LeftLine{
+    width: 300px;
+    position: relative;
+    float: left;
+    margin-left: 50px;
+}
+
+#RightLine{
+    width: 240px;
+    position: relative;
+    float: left;
+    margin-left: 50px;
+}
+
+#troublemaker{
+    display: block;
+    position: fixed; bottom: 0px; right: 0px;
+    width: 500px;
+    margin-right: 70px;
+    margin-bottom: 65px;
+    border: 2px solid rgb(22, 22, 22);
+    filter: grayscale(100%);
+
+}
+
+img.rounded-corners {
+    border-radius: 0px 0px 80px 10px;
+    z-index: 10;
+  }
+
+#Intext{
+    font-family: "HelveticaNeue-Light";
+    font-size: 250px; 
+    color: rgb(36, 36, 36);
+    text-transform: uppercase;
+    letter-spacing: -15px;
+    line-height: 200px;
+    padding-top: 50px;
+    padding-left: 25px;
+    position: absolute;
+  }
+
+
+#troublemaker:hover{
+    filter: grayscale(0%);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .7);
+    transition: .5s;
+}
+
+
+#bookicon{
+    float: right;
+    padding-top: 20px;
+    padding-right: 40px;
+    position: relative; 
+    height: 60px;
+}
+
+#bookicon:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}

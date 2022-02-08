@@ -1,0 +1,63 @@
+h1{
+    font-family: arial;
+    font-size: 30px; 
+    color: rgb(3, 109, 109);
+
+}
+
+div{
+    margin-left: 15px;
+    line-height: 50%;
+    font-family: helvetica;
+    color: rgb(3, 109, 109);
+}
+
+.alignleft {
+    float: left;
+    text-align:left;
+    width: auto;
+    font-size: 22px; 
+    color: teal;
+}
+
+.aligncenter {
+    float: left;
+    text-align:center;
+    font-size: 22px; 
+    color: teal;
+    margin-left: 30px;
+}
+.alignright {
+    float: left;
+    text-align:right;
+    font-size: 22px; 
+    color: teal;
+    margin-left: 50px;
+    
+}
+
+#LeftLine{
+    width: 300px;
+    position: relative;
+    opacity: 80%;
+    float: left;
+    margin-left: 50px;
+}
+
+#RightLine{
+    width: 240px;
+    position: relative;
+    opacity: 80%;
+    float: left;
+    margin-left: 50px;
+}
+
+#firstpageimg{
+    display: block;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(20, 121, 124);
+}
+
+

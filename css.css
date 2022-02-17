@@ -1,6 +1,6 @@
 *{
 /* margin: 50px; */
-
+background-color: #6f81cf;
 }
 
 .header {
@@ -11,10 +11,28 @@
     justify-content: space-between;
     font-family: helvetica neue;
     letter-spacing: -1.5px; 
+    color: #ef845e;
+}
+
+#website {
+    width: 90vw;
+}
+
+/* #website:hover{
+    filter: drop-shadow(0 0 1rem rgb(160, 115, 57));
+    opacity: 100%;
+    transition: all 0.5s ease;
+    } */
+
+
+hr{
+    border: none;
+    background-color: #ef845e;
+    height: 2px;
 }
 
 h1{
-    color: rgb(36, 36, 36);
+    color: #ef845e;
     text-transform: uppercase;
     font-family: helvetica;
     font-weight: 500;
@@ -24,7 +42,7 @@ h1{
 }
 
 h2{
-    color: rgb(36, 36, 36);
+    color: #ef845e;
     text-transform: uppercase;
     font-family: helvetica;
     font-weight: 300;
@@ -39,6 +57,6 @@ a{
 
 h2:hover{
     filter: grayscale(0%);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .7);
+    /* box-shadow: 0 5px 15px rgba(145, 92, 182, .7); */
     transition: .5s;
 }

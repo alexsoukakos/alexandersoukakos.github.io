@@ -46,13 +46,23 @@ h2{
     text-transform: uppercase;
     font-family: helvetica;
     font-weight: 300;
-    font-size: 120px;
-    letter-spacing: -6px; 
+    font-size: 5vw;
+    letter-spacing: -0.05em; 
     text-align: right;
 }
 
 a{
     text-decoration: none;
+}
+
+.projects {
+    margin-right: 3vw;
+    line-height: 1vw;
+}
+
+.project3 {
+    margin-right: 3vw;
+    line-height: 1vw;
 }
 
 h2:hover{

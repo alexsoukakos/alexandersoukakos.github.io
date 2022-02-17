@@ -1,0 +1,11 @@
+.header {
+    padding-top: 0vw;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: helvetica neue;
+    letter-spacing: -1.5px; 
+    color: #000000;
+    text-transform: uppercase;
+}

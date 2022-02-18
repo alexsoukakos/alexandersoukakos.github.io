@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+  .middle {
+    border: 1px dashed blue;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr)
+  }
+  
+  .middle h2 {
+    border: 1px solid black;
+    grid-row: 3/5;
+    grid-column: 2/6;
+  }
+  
+  .middle p {
+    border: 1px solid black;
+    grid-column: 2/6;
+    grid-row: 5/7;
+  }
+  
+  .green {
+    box-sizing: border-box;
+    padding: 2rem;
+    background: green;
+    grid-row: 4/6;
+    grid-column: 3/5;
+  /*   max-width: 400px;
+    margin: 0 auto; */
+  }
+  
+  .dates {
+    border: 1px dotted red;
+    margin-bottom: 0;
+  }
+  
+  
+  footer {
+    border:1px solid black;
+    
+    display: flex;
+    justify-content: space-between;
+  }

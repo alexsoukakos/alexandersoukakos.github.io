@@ -4,9 +4,135 @@ main {
     justify-content: space-between;
     height: 100vh;
   }
-  
+
+h1 {
+  font-family: Goozette;
+  color: rgb(235, 97, 97);
+  font-size: 4vw;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 20px;
+  letter-spacing: .02vw;
+}
+
+h2 {  font-family: Goozette;
+  color: rgb(235, 97, 97);
+  font-size: 4vw;
+  text-align: right;
+  margin-right: 15vw;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.header {
+  margin-top: 0;
+  font-size: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: panton;
+  letter-spacing: -1.5px; 
+  color: rgb(235, 97, 97);
+  border-bottom: 1px solid rgb(235, 97, 97);
+}
+
+.mirrorphoto {
+  width: 40vw;
+  grid-column: 4 / 6;
+  grid-row: 1 / 3;
+  content: url(images/04610003.JPG);
+  z-index: -10;
+}
+
+.friendsphoto {
+  width: 25vw;
+  margin-top: 8vw;
+  grid-column: 3 / 5;
+  grid-row: 2 / 4;
+  z-index: 10;
+  content: url(images/04620010.JPG);
+}
+
+.woodstockphoto {
+  width: 40vw;
+  margin-top: 10vw;
+  grid-column: 4 / 7;
+  grid-row: 4 / 7;
+  z-index: 10;
+  content: url(images/04610016.JPG);
+}
+
+.behindwoodstockphoto {
+  width: 25vw;
+  margin-top: 30vw;
+  grid-column: 2 / 4;
+  grid-row: 4 / 7;
+  z-index: 10;
+  content: url(images/04610014.JPG);
+}
+
+.nantucket {
+  width: 20vw;
+  grid-column: 2 / 4;
+  grid-row: 4 / 7;
+  content: url(images/04620017.JPG);
+}
+
+
+@font-face {
+  font-family: Goozette;
+  src: url(Goozette.otf);
+}
+
+@font-face {
+  font-family: Panton;
+  src: url(PantonAMBlack.otf);
+}
+
+.textbox1 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  margin-left: 20px;
+}
+
+.textbox2 {
+  grid-column: 5 / 6;
+  grid-row: 4;
+}
+
+.textbox3 {
+  grid-column: 2 / 4;
+  grid-row: 5;
+  margin-right: 40px;
+}
+
+.textbox4 {
+  grid-column: 5 / 6;
+  grid-row: 7;
+  margin-right: 40px;
+}
+
+.textbox5 {
+  grid-column: 2 / 6;
+  grid-row: 8;
+  margin-top: 5vw;
+}
+
+.lighttext {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(235, 97, 97);
+  font-size: 1vw;
+  /* line-height: 5vh; */
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: .5px;
+  margin-top: 0;
+  margin-right: 9px;
+}
+
+
   .middle {
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
     text-align: center;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -17,12 +143,6 @@ main {
     border: 1px solid black;
     grid-row: 3/5;
     grid-column: 2/6;
-  }
-  
-  .middle p {
-    border: 1px solid black;
-    grid-column: 2/6;
-    grid-row: 5/7;
   }
   
   .green {

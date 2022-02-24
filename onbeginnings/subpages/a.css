@@ -1,0 +1,74 @@
+
+body {
+    background-color:  #ffffff;
+    font-family:  "AkzidenzGrotesk";
+    padding: 50px;
+  }
+
+  @font-face {
+    font-family: AkzidenzGrotesk;
+    src: url(akzidenzgrotesque/Akzidenz-grotesk-light.ttf);
+  }
+
+
+
+@media (max-width: 650px) {
+    body {
+      background-color: black;
+      color:  white;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+  }
+
+h1, h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.container {
+    /* max-width: 900px; */
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-left: 10vw;
+    margin-right: 4vw;
+    border-right: solid #000;
+    border-width: 0 3px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+
+.content {
+    justify-content: right;
+    border-left: 2px;
+
+}
+
+p {
+    font-size: 90px;
+    line-height: 75%;
+    letter-spacing: 1px;
+    text-align: right;
+    border: 3px black;
+    text-decoration: underline dotted black 3px;
+}
+
+.greentext {
+    font-size: 100px;
+    letter-spacing: -20;
+    font-family: 'Syne Tactile';
+    color: rgb(99, 184, 88);
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+/* 
+.first {
+    background-color: brown;
+} */

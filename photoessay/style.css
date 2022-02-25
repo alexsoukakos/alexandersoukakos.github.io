@@ -5,6 +5,16 @@ main {
     height: 100vh;
   }
 
+@font-face {
+  font-family: Goozette;
+  src: url(Goozette.otf);
+}
+
+@font-face {
+  font-family: Panton;
+  src: url(PantonAMBlack.otf);
+}
+
 h1 {
   font-family: Goozette;
   color: rgb(235, 97, 97);
@@ -46,7 +56,7 @@ h2 {  font-family: Goozette;
 
 .friendsphoto {
   width: 25vw;
-  margin-top: 8vw;
+  margin-top: 7vw;
   grid-column: 3 / 5;
   grid-row: 2 / 4;
   z-index: 10;
@@ -60,15 +70,27 @@ h2 {  font-family: Goozette;
   grid-row: 4 / 7;
   z-index: 10;
   content: url(images/04610016.JPG);
+  box-shadow: 120px#0ff;
 }
 
 .behindwoodstockphoto {
   width: 25vw;
-  margin-top: 30vw;
+  margin-top: 32vw;
   grid-column: 2 / 4;
   grid-row: 4 / 7;
   z-index: 10;
   content: url(images/04610014.JPG);
+}
+
+.trainticket {
+  width: 24vw;
+    margin-top: 37vw;
+    padding-left: 15vw;
+    grid-column: 2 / 5;
+    grid-row: 5 / 8;
+    z-index: 10;
+    transform: rotate(-10deg);
+    content: url(images/NewHavenTicket.png);
 }
 
 .nantucket {
@@ -78,15 +100,13 @@ h2 {  font-family: Goozette;
   content: url(images/04620017.JPG);
 }
 
-
-@font-face {
-  font-family: Goozette;
-  src: url(Goozette.otf);
-}
-
-@font-face {
-  font-family: Panton;
-  src: url(PantonAMBlack.otf);
+.brook {
+  max-width: 35vw;
+  grid-column: 3 / 6;
+  grid-row: 8 / 10;
+  content: url(images/04620003.JPG);
+  padding-top: 10vw;
+  padding-left: 4vw;
 }
 
 .textbox1 {
@@ -115,7 +135,7 @@ h2 {  font-family: Goozette;
 .textbox5 {
   grid-column: 2 / 6;
   grid-row: 8;
-  margin-top: 5vw;
+  margin-top: 3vw;
 }
 
 .lighttext {
@@ -136,18 +156,13 @@ h2 {  font-family: Goozette;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(8,1fr)
+    grid-template-rows: repeat(9,1fr)
   }
   
   .middle h2 {
     border: 1px solid black;
     grid-row: 3/5;
     grid-column: 2/6;
-  }
-  
-  .dates {
-    border: 1px dotted red;
-    margin-bottom: 0;
   }
   
   
@@ -161,4 +176,5 @@ h2 {  font-family: Goozette;
   font-size: 3vw;
   margin-left: 10vw;
   margin-right: 10vw;
+  margin-top: 6vw;
   }

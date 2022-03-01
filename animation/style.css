@@ -1,0 +1,108 @@
+body {
+    background-color: #f0ff00;
+    flex-direction: column;
+}
+
+p {
+    font-family: Goozette;
+    font-size: 22vh;
+    line-height: 21vh;
+    text-align: justify;
+    color: #FFEBD3;
+    z-index: -20;
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 12vh;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+  /* p {
+    animation: blinker .3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    100% {
+      opacity: 0%;
+    }
+    80% {
+        opacity: 70%;
+    }
+    90% {
+        opacity: 80%;
+    }
+    0% {
+        opacity: 100%;
+  }
+} */
+
+
+#red-ring:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
+@keyframes redringSpin {
+    100% {
+      transform: rotate(0turn);
+    }
+    0% {
+      transform: rotate(3turn);
+    }
+  }
+
+  @keyframes body {
+    100% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 100;
+    }
+  }
+
+@keyframes spikeringSpin {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(.5turn);
+    }
+  }
+  
+  #red-ring {
+    animation: redringSpin 5s ease-out infinite;
+    height: 100vh;
+    z-index: 10;
+    mix-blend-mode: color-burn;
+  }
+
+  @font-face {
+    font-family: 'Obesum';
+    src: url(assets/Goozette\ copy.otf);
+    font-style: normal; 
+    font-weight: 100;
+}
+
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin-right: 10vh; */
+  }
+
+  #spike-ring {
+      z-index: -10;
+      animation: spikeringSpin 5s ease-out infinite;
+      height: 100vh;
+      position: absolute;
+    }
+  

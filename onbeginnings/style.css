@@ -1,0 +1,33 @@
+* {
+    background-color: #56af5a;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-size: 1.55em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+    border: 3px solid red;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+
+html,body,svg { height:30vw; }
+svg { 
+    border: solid 1px red;
+    margin: 0;
+}
+text { 
+    fill: #ffffff;
+}
+
+path {
+    fill: transparent;
+    margin: 0;
+}

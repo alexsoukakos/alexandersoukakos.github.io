@@ -1,33 +1,227 @@
-* {
-    background-color: #56af5a;
-    height: 100vh;
-    margin: 0;
-}
-
 body {
-    font-size: 1.55em;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    flex-direction: column;
+    filter: grayscale();
+    margin: 0;
+    text-shadow: 0 0 10px #fff, 12px -14px 20px #fff, -14px 16px 30px #a9a9a9, 0 0 40px #e60073;
+    animation-name: glow;
+    cursor: crosshair;
+}
+/* .arrow {
+    letter-spacing: 10vh;
+} */
+
+
+.scanoverlay {
+  margin: 0;
+  position: absolute;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
 }
 
-.grid {
-    border: 3px solid red;
+.noiseoverlay {
+    margin: 0;
+    position: absolute;
+    z-index: 30;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6,1fr);
-}
+    width: 100vw;
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+  }
 
-
-html,body,svg { height:30vw; }
-svg { 
-    border: solid 1px red;
+  .noiseoverlay1 {
     margin: 0;
-}
-text { 
-    fill: #ffffff;
+    position: absolute;
+    z-index: 30;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: hard-light;
+    pointer-events: none;
+    filter: contrast(50%);
+    opacity: 30%;
+  }
+
+  @font-face {
+    font-family: 'Syne';
+    src: url(assets/SyneTactile-Regular\ copy.ttf)
 }
 
-path {
-    fill: transparent;
+@font-face {
+    font-family: 'Redaction';
+    src: url(assets/Redaction_35-Italic\ copy.woff2)
+}
+
+.parent {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.animation-container {
+    transform:translateY(-7vh);
+    filter: blur(2px);
+    font-family: Redaction;
+    letter-spacing: -1.05vh;
+}
+
+.oval:hover {
+    transform: scale(110%);
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.scroll-container {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: visible;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+.secondcontainer {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2vh;
+    z-index: 10;
+    display: flex;
+  }
+
+  .bottomcontainer {
+    /* border: 8px dashed rgb(255, 255, 255); */
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 100px;
+    overflow: visible;
+    z-index: 10;
+    display: flex;
+    justify-content: right;
+    margin-left: 10vw;
+  }
+
+.oval {
+    width: 180px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgb(177, 177, 177);
+    overflow: hidden;
+    margin-top: 2.7vh;
+    margin-right: 6vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+@media screen and (max-width : 1204px)
+{
+  .oval
+  {
+    width: 300px;
+  }}
+
+
+.thirdcontainer {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2vh;
+    z-index: 10;
+    display: flex;
+  }
+
+.thirdcontainer:hover {
+    filter: blur(3px);
+    transition: ease(6s);
+    /* filter: invert();  */
+}
+
+.secondcontainer:hover {
+    filter: blur(3px);
+    transition: ease(6s);
+    /* filter: invert(); */
+}
+
+  
+.scroll-text {
+    animation: my-animation2 400s linear infinite;
+    animation-direction: alternate;
+    color: white;
+    white-space: nowrap;
+    font-size: 10vh;
+  }
+
+.secondtext {
+    animation: my-animation 400s linear infinite;
+    animation-direction: alternate;
+    color: white;
+    white-space: nowrap;
+    font-size: 10vh;
+  }
+
+.thirdtext {
+    animation: my-animation2 400s linear infinite;
+    animation-direction: alternate;
+    color: white;
+    white-space: nowrap;
+    font-size: 10vh;
+  }
+
+  p {
+    font-size: 52px;
+    letter-spacing: 0;
+    color: #ffffff;
+    transform: rotate(-3deg);
+}
+
+.oval:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 3.5vh;
+    letter-spacing: 0;
+    color: #b2b2b2;
     margin: 0;
+    text-shadow: none;
+    filter: none;
+}
+  
+.sidetext {
+    margin-top: 6vh;
+    margin-right: 4vh;
+    display: flex;
+}
+
+@media screen and (max-width : 1204px)
+{
+  .sidetext
+  {
+    margin-top: 3.5vh;
+    font-size: 3.5vh;
+    line-height: 3vh;
+  }}
+
+
+  @keyframes my-animation {
+    from {
+      transform: translateX(-72%);
+    }
+    to {
+      transform: translateX(300%);
+    }
+}
+
+@keyframes my-animation2 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-400%);
+    }
 }

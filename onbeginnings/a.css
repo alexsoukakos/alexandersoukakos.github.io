@@ -1,0 +1,116 @@
+
+body {
+  background-color: #000000;    
+  font-family:  "Redaction";
+  letter-spacing: -1.05vh;
+  margin: 0;
+  cursor: crosshair;
+  flex-direction: column;
+  text-shadow: 0 0 10px #fff, 12px -14px 20px #fff, -14px 16px 30px #a9a9a9, 0 0 40px #e60073;
+  }
+
+
+  .scanoverlay {
+    margin: 0;
+    position: absolute;
+    z-index: 30;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: color-burn;
+    pointer-events: none;
+  }
+  
+  .noiseoverlay {
+      margin: 0;
+      position: absolute;
+      z-index: 30;
+      height: 100vh;
+      width: 100vw;
+      mix-blend-mode: soft-light;
+      pointer-events: none;
+    }
+  
+    .noiseoverlay1 {
+      margin: 0;
+      position: absolute;
+      z-index: 30;
+      height: 100vh;
+      width: 100vw;
+      mix-blend-mode: hard-light;
+      pointer-events: none;
+      filter: contrast(50%);
+      opacity: 30%;
+    }
+
+  @font-face {
+    font-family: AkzidenzGrotesk;
+    src: url(akzidenzgrotesque/Akzidenz-grotesk-light.ttf);
+  }
+
+  @font-face {
+    font-family: 'Redaction';
+    src: url(assets/Redaction_35-Italic\ copy.woff2)
+  }
+
+
+
+@media (max-width: 650px) {
+    body {
+      background-color: black;
+      color:  white;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+  }
+
+h1, h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.container {
+    /* max-width: 900px; */
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-left: 10vw;
+    margin-right: 4vw;
+    border-right: solid #000;
+    border-width: 0 3px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+
+.content {
+    justify-content: right;
+    border-left: 2px;
+
+}
+
+p {
+    font-size: 90px;
+    line-height: 75%;
+    letter-spacing: 1px;
+    text-align: right;
+    border: 3px black;
+    text-decoration: underline dotted black 3px;
+}
+
+.greentext {
+    font-size: 100px;
+    letter-spacing: -20;
+    font-family: 'Syne Tactile';
+    color: rgb(99, 184, 88);
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+/* 
+.first {
+    background-color: brown;
+} */

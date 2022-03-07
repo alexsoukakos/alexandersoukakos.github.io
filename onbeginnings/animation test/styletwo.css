@@ -1,0 +1,225 @@
+body {
+    background-color: #ffffff;
+    flex-direction: column;
+    filter: grayscale();
+    margin: 0;
+    text-shadow: 0 0 10px #fff, 12px -14px 20px #fff, -14px 16px 30px #a9a9a9, 0 0 40px #e60073;
+    animation-name: glow;
+}
+/* .arrow {
+    letter-spacing: 10vh;
+} */
+
+h3 {
+  font-size: 3.5vh;
+  letter-spacing: 0;
+  color: #b2b2b2;
+  margin: 0;
+  text-shadow: none;
+  filter: none;
+}
+
+.sidetext {
+  margin-top: 5vh;
+  margin-right: 6vh;
+  display: flex;
+}
+
+p {
+  font-size: 52px;
+  letter-spacing: 0;
+  color: #ffffff;
+  transform: rotate(-3deg);
+}
+
+.oval {
+  width: 160px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgb(177, 177, 177);
+  overflow: hidden;
+  margin-top: 2vh;
+  margin-right: 6vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.bottomcontainer {
+  /* border: 8px dashed rgb(255, 255, 255); */
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 100px;
+  overflow: visible;
+  z-index: 10;
+  display: flex;
+  justify-content: right;
+}
+
+.oval:hover {
+  transform: scale(110%);
+  transition: ease .5s;
+}
+
+.scanoverlay {
+  margin: 0;
+  position: absolute;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+}
+
+.noiseoverlay {
+    margin: 0;
+    position: absolute;
+    z-index: 30;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+  }
+
+  /* .noiseoverlay1 {
+    margin: 0;
+    position: absolute;
+    z-index: 30;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: hard-light;
+    pointer-events: none;
+    filter: contrast(50%)
+  } */
+
+  @font-face {
+    font-family: 'Syne';
+    src: url(assets/SyneTactile-Regular\ copy.ttf)
+}
+
+@font-face {
+    font-family: 'Redaction';
+    src: url(assets/Redaction_35-Italic\ copy.woff2)
+}
+
+.parent {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.animation-container {
+    transform:translateY(-7vh);
+    filter: blur(2px);
+    font-family: Redaction;
+    letter-spacing: -1.05vh;
+}
+
+.scroll-container {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: visible;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+.secondcontainer {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2vh;
+    z-index: 10;
+    display: flex;
+  }
+
+/* .secondcontainer:hover {
+    filter: blur(10px);
+    transition: .3s;
+} */
+
+  .thirdcontainer {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2vh;
+    z-index: 10;
+    display: flex;
+  }
+  
+.scroll-text {
+    transform: translateX(50%);
+    animation: my-animation 50s linear infinite;
+    color: white;
+    white-space: nowrap;
+    font-size: 10vh;
+    animation-delay: -40s;
+  }
+
+.secondtext {
+    /* transform: translateX(-200%); */
+     /* transform: translateX(-25%); */
+    animation: my-animation-reverse 100s linear infinite;
+    color: white;
+    white-space: nowrap;
+    font-size: 10vh;
+    animation-delay: -20s;
+  }
+
+marquee {
+  animation: my-animation-reverse 100s linear infinite;
+  color: white;
+  white-space: nowrap;
+  font-size: 10vh;
+}
+
+
+.thirdtext {
+    /* transform: translateX(50%); */
+    animation: my-animation 100s linear infinite;
+    color: white;
+    white-space: nowrap;
+    font-size: 10vh;
+    animation-delay: -20s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.marquee {
+    position: absolute;
+    display: flex;
+    animation: moveLeft 1200s linear infinite;
+  }
+  
+.track {
+    white-space: nowrap;
+    min-width: 100%;
+    text-align: center;
+  }
+  
+  section[id*="dte-weekend-adventures-full"] {
+   overflow-x: hidden;
+   overflow-y:hidden;
+   min-height:initial;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+
+  @keyframes moveLeft {
+    from { transform: translateX(0%) }  to { transform: translateX(-100%) }
+  } */

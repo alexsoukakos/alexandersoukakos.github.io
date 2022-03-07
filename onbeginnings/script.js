@@ -1,1 +1,0 @@
-new CircleType(document.getElementById('demo3'));

@@ -1,7 +1,7 @@
 
 body {
     background-color:  #ffffff;
-    font-family:  "AkzidenzGrotesk";
+    font-family:  Redaction;
     padding: 50px;
   }
 
@@ -9,6 +9,11 @@ body {
     font-family: AkzidenzGrotesk;
     src: url(akzidenzgrotesque/Akzidenz-grotesk-light.ttf);
   }
+
+  @font-face {
+    font-family: 'Redaction';
+    src: url()
+}
 
 
 

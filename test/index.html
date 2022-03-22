@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>On Beginnings</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="testtext"><h1>Test Test Test Test Test </h1></div> -->
+    
+    <div class="cursor">
+        <div class="vt"></div>
+        <div class="hl"></div>
+      </div>
+
+    <script>const cursorVT = document.querySelector('.vt')
+        const cursorHL = document.querySelector('.hl')
+        
+        document.addEventListener('mousemove', e => {
+          cursorVT.setAttribute('style', `left: ${e.clientX}px;`)
+          cursorHL.setAttribute('style', `top: ${e.clientY}px;`)
+        })</script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    height: 500vh;
+    margin: 0;
+    overflow: auto;
+    background: black;
+  }
+
+  h1 {
+      color: white;
+      z-index: -5;
+      mix-blend-mode: exclusion;
+  }
+  
+  .cursor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .vt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    background: black;
+  }
+  
+  .hl {
+    position: absolute;
+    height: 100px;
+    left: 0;
+    z-index: 10;
+    right: 0;
+    background: rgb(235, 212, 179);
+    filter:blur(20px);
+    mix-blend-mode: difference;
+  }

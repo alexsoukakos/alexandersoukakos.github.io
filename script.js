@@ -1,15 +1,15 @@
-// let invertButton = document.querySelector(".lightningbutton");
-// let page = document.body;
+let invertButton = document.querySelector(".lightningbutton");
+let page = document.body;
 
 
-// function invert() {
-//     page.classList.toggle("invert");
-// }
+function invert() {
+    page.classList.toggle("invert");
+}
 
-// invertButton.addEventListener("click", invert);
+invertButton.addEventListener("click", invert);
 
 let whiteoutButton = document.querySelector(".colorbutton");
-let page = document.body;
+// let page = document.body;
 
 
 function whiteout() {
@@ -18,15 +18,17 @@ function whiteout() {
 
 whiteoutButton.addEventListener("click", whiteout);
 
-// let grayscaleButton = document.querySelector(".buttondarkmode");
+let grayscaleButton = document.querySelector(".buttondarkmode");
 // let page = document.body;
 
 
-// function grayscale() {
-//     page.classList.toggle("grayscale");
-// }
+function grayscale() {
+    page.classList.toggle("grayscale");
+}
 
-// grayscaleButton.addEventListener("click", grayscale);
+grayscaleButton.addEventListener("click", grayscale);
+
+
 
 function runClock() {
 

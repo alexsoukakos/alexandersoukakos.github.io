@@ -434,8 +434,9 @@ marquee {
     letter-spacing: -.5vh;
   }
 
-
-
+.bodytext:hover {
+    font-family: Redaction35-Italic
+}
 
   @media all and (max-width: 575px) {
     body { 

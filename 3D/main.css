@@ -1,10 +1,27 @@
 
 body {
-    background-color: black;
+    background-color: rgb(212, 54, 54);
     margin: 0;
   }
   
   model-viewer {
     width: 80vw;
     height: 80vh;
+  }
+
+
+.interaction-prompt {
+    height: 1vh;
+    width: auto;
+  }
+
+  .linesoverlay {
+    margin: 0;
+    position: absolute;
+    z-index: 30;
+    height: 100vh;
+    width: 100vw;
+    /* mix-blend-mode: soft-light; */
+    filter: brightness(650%) grayscale(100%);
+    pointer-events: none;
   }

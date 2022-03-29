@@ -225,3 +225,380 @@ h3 {
       transform: translateX(-400%);
     }
 }
+
+new inex 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alexander Soukakos</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <title>CSS Grid Template 8</title>
+</head>
+
+<body>
+    <img class="scanoverlay" src="Photocopy 1 copy 2.jpg">
+    <img class="linesoverlay" src="scanlines copy.gif">
+<header id="pageHeader">
+    <div class="button1"><img id=buttonicon src="Crescent-Moon-PNG-Picture.png"></div>
+    <div class="button2"><img id=buttonicon src="paintbrush.png"></div>
+    <div class="button3"><img id=buttonicon src="lightning.png"></div>
+</header>
+<article id="mainArticle">
+    <div class="numbered"><h3>➂</h3></div>
+    
+</article>
+
+<nav id="mainNav">
+    <div class="numbered"><h3>➁</h3></div>
+    <div class="circles"></div>
+    <div class="projects">
+    
+        <div class="project00">
+            <a href="onbeginnings/index.html">
+            <h2>Stories As<br>Networks</h2></a></div>
+    
+    
+        <div class="project00">
+            <a href="3D/index.html">
+            <h2>  3D </h2></a></div>
+    
+    
+        <div class="project00">
+            <a href="photoessay/index.html">
+            <h2> Photo<br>Essay</h2></a></div>
+    
+        <div class="project00">
+            <a href="animation/index.html">
+            <h2> Animation<br>Excersize
+            </h2></a></div>
+    
+        <div class="project00">
+        <a href="wherethewildthingsarestory/Index.html">
+        <h2> Storytelling</h2></a></div>
+    
+        <div class="project00">
+            <a href="animation/index.html">
+            <h2>Cow Tools</h2></a></div>
+
+             <div class="project00">
+            <a href="Poster/index.html">
+            <h2>H2</h2></a></div>
+    
+        <div class="project00">
+        <a href="wherethewildthingsarestory/Index.html">
+        <h2>Table of Contents</h2></a></div>
+    
+    
+    </div>
+    
+    
+    </div>
+</nav>
+
+<div id="siteAds">
+    <div class="numbered"><h3>➀</h3></div>
+    <div class="circles"></div>
+    <div class="logo">
+        <model-viewer bounds="tight" src="https://alexsoukakos.github.io/alexandersoukakos.github.io/3D/XDRupright.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls="" environment-image="neutral" shadow-intensity="0.37" shadow-softness="1" auto-rotate="" interaction-prompt-style="basic" ar-status="not-presenting" rotation-per-second="60deg" interaction-prompt-threshold="500" auto-rotate camera-orbit="-28.21deg 104.6deg -20.54m auto">
+        </model-viewer>
+        
+    </div>
+</div>
+
+<footer id="pageFooter">
+    <div class="footercircle"></div>
+    <div class="numberedfooter"><h3>➃</h3></div>
+</footer>
+</body> 
+</html>
+
+new css
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "ads article"
+    "nav article"
+    "nav footer";
+    grid-template-rows: 30px 250px 1fr 60px;  
+    grid-template-columns: 30% 1fr;
+  grid-row-gap: 2.5px;
+  grid-column-gap: 3px;
+  height: 100vh;
+  margin: 0;
+  background: rgb(255 255 255);
+  }  
+
+
+  model-viewer {
+      height: 250px;
+      width: 30vw;
+      z-index: 0;
+      filter: grayscale();
+    }
+
+.page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.scanoverlay {
+margin: 0;
+position: absolute;
+z-index: 30;
+height: 100vh;
+width: 100vw;
+mix-blend-mode: color-dodge;
+pointer-events: none;
+pointer-events: none;
+}
+
+.numbered {
+  position: absolute;
+  padding-left: 1.25vh;
+  padding-top: .25vh;
+  background: none;
+}
+
+.numberedfooter {
+  position: absolute;
+  padding-left: 2vh;
+  padding-top: .75vh;
+  background: none;
+}
+
+.projects {
+  padding-top: 6vh;
+  padding-left: 2vh;
+  padding-right: 1vh;
+}
+
+.linesoverlay {
+  margin: 0;
+  position: absolute;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  filter: brightness(350%);
+  opacity: 40%;
+  pointer-events: none;
+}
+
+.button1 {
+  border: 3px solid rgb(255 255 255);
+  border-radius: 250px;
+  width: 7.5vh;
+  height: 7.5vh;
+  display: flex;
+  position: absolute;
+  margin-top: 1vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Redaction';
+  src: url(Redaction50-Regular\ copy.otf)
+}
+
+@font-face {
+  font-family: 'RedactionItalic';
+  src: url(Redaction35-Italic\ copy\ 2.otf)
+}
+
+@font-face {
+  font-family: 'Redactionseventy';
+  src: url(Redaction70-Regular\ copy.otf)
+}
+
+.button2 {
+  border: 3px solid rgb(255 255 255);
+  border-radius: 250px;
+  width: 7.5vh;
+  height: 7.5vh;
+  display: flex;
+  position: absolute;
+  margin-top: 1vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 11vh;
+}
+
+.button3 {
+  border: 3px solid rgb(255 255 255);
+  border-radius: 250px;
+  width: 7.5vh;
+  height: 7.5vh;
+  display: flex;
+  position: absolute;
+  margin-top: 1vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 22vh;
+}
+
+#buttonicon {
+  width: 4vh;
+  height: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circles {
+  border: 3px solid rgb(255 255 255);
+  border-radius: 250px;
+  width: 3.5vh;
+  height: 3.5vh;
+  display: flex;
+  position: absolute;
+  margin-top: -2vh;
+  background: rgb(62 56 195);
+  z-index: 10;
+  margin-left: 29%;
+}
+
+.footercircle {
+  border: 3px solid rgb(255 255 255);
+  border-radius: 250px;
+  width: 3.5vh;
+  height: 3.5vh;
+  display: flex;
+  position: absolute;
+  margin-top: -2.5vh;
+  background: rgb(62 56 195);
+  z-index: 10;
+  margin-left: -1.2%;
+}
+
+.logo {
+  display: block;
+  padding: 0;
+}
+
+h2:hover {
+  font-family: redaction;
+  font-weight: 800;
+}
+  
+footer, article, nav, div {
+  background: rgb(62 56 195);
+  }
+#pageHeader {
+  grid-area: header;
+  background: rgb(255, 255, 255);
+  overflow: visible;
+  display: flex;
+  justify-content: right;
+  padding-right: 5vh;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article; 
+  overflow: hidden;    
+  padding: 1vh; 
+  display: block;
+  justify-content: center;
+  }
+#mainNav { 
+  grid-area: nav;
+  overflow-y: scroll;
+  
+  }
+#siteAds { 
+  grid-area: ads; 
+  overflow: hidden;
+  justify-content: center;
+  } 
+
+
+.project00 {
+  border: 3.3px dotted rgb(255 255 255);
+  border-radius: 50px;
+  line-height: 4vh;
+  display: inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  margin-bottom: 2vh;
+  margin-left: 1vh;
+  padding: 1vh;
+  }
+
+h4 {
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.05em; 
+  text-align: right;
+  padding-right: 2vh;
+  padding-top: 1vh;
+}
+
+h2 {
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-family: Redactionseventy;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.5vw;
+  margin: 0;
+  letter-spacing: -0.05em; 
+  text-align: left;
+  padding-right: 1.5vh;
+  padding-left: 1vh;
+  padding-bottom: .5vh;
+  padding-top: 1vh;
+}
+
+h3 {
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 2.5vw;
+  margin: 0;
+  letter-spacing: -0.05em; 
+  text-align: right;
+  padding-right: 2vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button1:hover{
+  transform: 150%;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}

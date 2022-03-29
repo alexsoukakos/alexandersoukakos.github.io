@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: helvetica;
+    font-size: 4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -.1em;
+    line-height: 9vh;
+    margin: 0;
+    color: white;
+    text-align: left;
+    text-decoration: underline dotted 8px red;
+    position: relative;
+    padding-top: 3vh;
+    padding-left: 5vh;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+h1:hover {
+    color: red;
+  }
+
+.title {
+    margin-top: 0;
+    display: flex;
+    text-align: right;
+    padding-right: 4vh;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.photo {
+    height: 40vh;
+    /* border: solid 3px rgb(255, 255, 255); */
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    padding-top: 10vh;
+}
+
+.photoslide {
+    bottom: 5vh;
+    left: 5vh;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    /* border: solid 3px rgb(255, 255, 255); */
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-bottom: 10vh;
+    flex-direction: row;
+    margin-left: 10vh;
+    /* background-color: blue; */
+}
+
+
+
+h2 {
+    font-family: helvetica;
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -.1em;
+    margin: 0;
+    color: white;
+    text-align: left;
+    text-decoration: underline dotted 5px red;
+    white-space: pre;
+    margin-bottom: 10vh;
+}
+
+h3 {
+    font-family: helvetica;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -.1em;
+    color: white;
+    margin: 0;
+    white-space: pre;
+    font-style: italic;
+    opacity: 50%;
+}
+
+
+.scroll {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.photocell {
+    width: 42vw;
+
+    display: flex;
+    justify-content: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}

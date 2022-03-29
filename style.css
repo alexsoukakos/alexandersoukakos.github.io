@@ -425,8 +425,14 @@ a{
     display: inline-block;
 }
 
-
-
+marquee {
+    animation: my-animation-reverse 100s linear infinite;
+    color: white;
+    white-space: nowrap;
+    font-family: Redaction35-Italic;
+    font-size: 7vh;
+    letter-spacing: -.5vh;
+  }
 
 
 

@@ -1,0 +1,40 @@
+html {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    padding: 2vw;
+    line-height: 4vh;
+    text-transform: capitalize;
+    text-align: right;
+}
+  
+  body {
+    color: white;
+    background: black;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+  
+  span {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  .heading {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 3vh;
+    text-align: left;
+  }
+
+  .key {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 1.5vh;
+    border: 1px solid white;
+    width: fit-content;
+    margin-bottom: 10vh;
+  }
+
+

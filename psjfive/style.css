@@ -1,0 +1,66 @@
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(226, 203, 177);
+}
+
+.container {
+  z-index: 0;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 60vw;
+  padding-top: 5vh;
+  mix-blend-mode: multiply;
+  stroke: solid 2px black;
+}
+
+img {
+  transform: rotate(-10deg);
+  height: 70vh;
+  width: auto;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.textbox {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: Dots;
+  font-weight: 300;
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 5vh;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Dots";
+  src: url(0xA000-Boxes\ copy.ttf);
+}
+
+.masterdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  
+}
+
+.smalltext {
+  font-size: .8em;
+}

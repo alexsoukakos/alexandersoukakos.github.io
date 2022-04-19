@@ -1,0 +1,79 @@
+html {
+    /* filter: saturate(130%); */
+    background-color: white;
+    background-image: url(background.png);
+    background-size: 100% 100%;
+    
+}
+
+/* .noise::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: .15;  
+    z-index: 1000;
+    pointer-events: none;
+    background-image: url(noise\ copy.gif);
+    filter: grayscale() contrast(150%);
+    mix-blend-mode: multiply;
+} */
+
+/* video {
+    filter: saturate(200%);
+    top: 0;
+    mix-blend-mode: multiply;
+}
+
+.videoblend {
+    display: inline;
+    z-index: 100;
+} */
+
+.eyeslogo {
+    width: 60vw;
+    margin-bottom: 10vh;
+    
+}
+
+.ichthys {
+    width: 100vw;
+    margin: 0;
+}
+
+.whitebackground {
+    position: relative;
+    z-index: 99;
+    top: 0;
+}
+
+
+hr {
+    border: 30px solid;
+    border-image: url(ichthysborder.png);
+    border-image-repeat: repeat;
+    /* border-image-slice: 20 20 20 20; */
+}
+
+.border2 {
+    border: 25px solid transparent;
+    width: 400px;
+    height: 500px;
+    margin: 100px;
+    border-image: url(ichthysborder.png);
+    border-image-repeat: repeat;
+    /* background-color: red; */
+    border-image-slice: 50;
+    border-image-width: 20px;
+}
+
+.background {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+}
+

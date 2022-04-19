@@ -1,0 +1,80 @@
+
+body {
+    background-image: url("https://dataviz.spatial.ly/black_marble_animation.gif");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    margin: 0;
+  }
+
+h1 {
+    color: white;
+    font-family: vivaldi;
+    text-align: center;
+}
+  
+  .garden {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    mix-blend-mode: overlay;
+  }
+  
+  .flag {
+    font-family: arial;
+    display: flex;
+    padding: 50px;
+    border: 2px solid black;
+    color: white;
+    width: 120px;
+  }
+  
+  
+  .American {
+    background-color: red;
+    background-image: url("https://m.media-amazon.com/images/I/71aBiP38BUL._AC_SL1500_.jpg");
+    background-size: 230px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .Greek {
+    background-color: pink;
+    background-image: url("https://cdn.britannica.com/49/1049-004-AE4BAD3E/Flag-Greece.jpg");
+    background-size: 220px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .Japan {
+    background-color:  yellow;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png");
+    background-size: 150px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .Canada {
+    background-color:  powderblue;
+    background-image: url("https://www.worldatlas.com/img/flag/ca-flag.jpg");
+    background-size: 150px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .Brazil {
+    background-color: blue;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .Mexico {
+    background-color: green;
+    background-image: url("https://cdn.britannica.com/73/2573-004-29818847/Flag-Mexico.jpg");
+    background-size: 230px;
+    background-position: center;
+    background-repeat: repeat;
+  }

@@ -1,79 +1,289 @@
 html {
-    /* filter: saturate(130%); */
+    filter: saturate(130%);
     background-color: white;
     background-image: url(background.png);
-    background-size: 100% 100%;
-    
+    background-size: 100% 100%; 
+    /* max-width: 100vw;
+    height: 3000px; */
+    background-position: fixed;
 }
 
-/* .noise::before{
+body {
+    max-width: 100vw;
+}
+
+
+.noise::before{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     content: "";
-    opacity: .15;  
+    opacity: .35;  
     z-index: 1000;
     pointer-events: none;
     background-image: url(noise\ copy.gif);
     filter: grayscale() contrast(150%);
     mix-blend-mode: multiply;
-} */
-
-/* video {
-    filter: saturate(200%);
-    top: 0;
-    mix-blend-mode: multiply;
 }
 
-.videoblend {
-    display: inline;
-    z-index: 100;
+.photocarousel {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    margin-top: 10vh;
+    overflow: hidden;
+    overflow-x: scroll;
+    /* margin-bottom: 5vh; */
+}
+
+
+.billboardicon {
+    height: 12vh;
+    width: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: 3px solid black;
+}
+
+.tags {
+    max-width: 90vw;
+    height: 12vh;
+    flex-direction: row;
+    row-gap: 1px;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.tagbutton, .tagbutton2, .tagbutton3, .tagbutton4, .tagbutton5, .tagbutton6, .tagbutton7, .tagbutton8, .tagbutton9, .tagbutton10, .tagbutton11, .tagbutton12 {
+    display: flex;
+    height: 35px;
+    width: fit-content;
+    min-width: fit-content;
+    background-color: red;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-left: 5px;
+    top: 0;
+    align-content: center;
+    justify-content: left;
+}
+
+.tagbutton:hover, .tagbutton2:hover, .tagbutton3:hover, .tagbutton4:hover, .tagbutton5:hover, .tagbutton6:hover, .tagbutton7:hover, .tagbutton8:hover, .tagbutton9:hover, .tagbutton10:hover, .tagbutton11:hover, .tagbutton12:hover {
+    transform: scale(110%);
+    transition: .25s;
+    background-color: black;
+}
+
+h1 {
+    font-style: normal;
+    font-family: arial;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: -.05em;
+    line-height: 30%;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-weight: lighter;
+}
+
+.billboard-title {
+    font-family: arial;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: -.05em;
+    line-height: 3rem;
+    font-weight:bolder;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    /* display: none; */
+}
+
+
+.location {
+    font-family: arial;
+    color: red;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: -.05em;
+    font-weight:bolder;
+    text-align: center;
+    /* display: none; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* h2.active {
+    display: block;
 } */
 
+
 .eyeslogo {
-    width: 60vw;
-    margin-bottom: 10vh;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    z-index: 50;
+}
+
+#eyes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* margin-top: 20vh; */
+    transition: 1s; 
+    margin-bottom: -2vh;
+    pointer-events: none;
 }
 
 .ichthys {
     width: 100vw;
-    margin: 0;
-}
-
-.whitebackground {
-    position: relative;
-    z-index: 99;
+    height: auto;
+    /* z-index: -30; */
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
+    padding-top: 3vh;
+    margin-left: -.5vw;
+}
+
+.ichthys2 {
+    width: 100vw;
+    height: auto;
+    z-index: -30;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding-top: 3vh;
+    margin-left: -.5vw;
 }
 
 
-hr {
+.mastergallery {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.information {
+    min-width: 30vw;
+    height: 50vh;
+    border: solid 2.5px black;
+    margin-top: 20vh;
+    margin-right: 5vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.billboard-container {
+    /* padding: 1rem; */
+    /* min-width: 55vw; */
+    /* height: 90vh; */
+    margin: 1vh;
+    /* border: 2px solid black; */
+    width: fit-content;
+    display: inline-block;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+}
+
+
+.gallery {
+    /* padding: 1rem; */
+    min-width: 55vw;
+    height: 90vh;
+    margin: 1vh;
+    /* border: 2px solid black; */
+    margin-left: 4%;
+    margin-top: 5%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.information-container {
+    /* padding: 1rem; */
+    border: 2px solid black;
+    width: 30vw;
+    height: 50vh;
+    /* display: inline-block; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+}
+
+.billboard-image {
+    width: 26vw;
+    height: auto;
+    border: solid 2.5px black;
+}
+
+.billboard-image:hover {
+    transform: scale(105%);
+    transition: .25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hr {
     border: 30px solid;
     border-image: url(ichthysborder.png);
     border-image-repeat: repeat;
-    /* border-image-slice: 20 20 20 20; */
-}
+    border-image-slice: 20 20 20 20;
+} */
 
-.border2 {
+/* .border2 {
     border: 25px solid transparent;
     width: 400px;
     height: 500px;
     margin: 100px;
     border-image: url(ichthysborder.png);
     border-image-repeat: repeat;
-    /* background-color: red; */
+    background-color: red;
     border-image-slice: 50;
     border-image-width: 20px;
-}
+} */
 
-.background {
+/* .background {
     width: 100vw;
     height: auto;
     position: fixed;
     top: 0;
     z-index: -100;
-}
+} */
 

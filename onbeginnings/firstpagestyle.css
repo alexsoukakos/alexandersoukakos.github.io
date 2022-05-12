@@ -11,6 +11,22 @@ body {
   animation: fadeOutAnimation ease 3s;
 }
 
+body {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: whitesmoke; 
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+  filter: blur(1.5px);
+}
+
 @keyframes fadeOutAnimation {
   0% {
       opacity: 0;

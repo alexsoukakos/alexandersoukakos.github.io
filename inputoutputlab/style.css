@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+
+input {
+  height: 3vw;
+  width: 20vw;
+  border-radius: 25px;
+  border: 6px solid black;
+  background:rgb(0, 0, 0)
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vw;
+  padding-left: 10vw;
+  margin-left: 32vw;
+  text-align: left;
+}
+
+button {
+  margin-left: 300px;
+  display: block;
+  stroke: solid 10px black;
+}
+
+.container {
+  z-index: 0;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 60vw;
+  padding-top: 5vh;
+  mix-blend-mode: multiply;
+  stroke: solid 2px black;
+}
+
+.scanoverlay {
+  margin: 0;
+  position: absolute;
+  z-index: 30;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 50vh;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+}
+
+.pfive {
+  filter: invert();
+}
+
+img {
+  transform: rotate(-10deg);
+  height: 70vh;
+  width: auto;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.textbox {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-size: 2em;
+  letter-spacing: -0.05em;
+  line-height: 5vh;
+  text-align: center;
+  margin-left:42.5vw;
+  text-transform: uppercase;
+}
+
+
+.smalltext {
+  font-size: .8em;
+}

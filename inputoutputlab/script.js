@@ -23,9 +23,9 @@ function draw() {
   scale(1.5, 0.75);
   translate(0, 200);
 
-  rect(160, 547, 240, 25, 30);
+  rect(350, 647, 240, 25, 30);
   fill(0);
-  text("PRESS S TO SAVE YOUR TYPE", 170, 550, 225, 25);
+  text("PRESS S TO SAVE YOUR TYPE", 380, 650, 225, 25);
   textSize(20);
   fill(100, 200);
 

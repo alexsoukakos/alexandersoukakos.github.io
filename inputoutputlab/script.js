@@ -5,13 +5,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   input = createInput();
-  input.position(20, 65);
+  input.position(20, 200);
 
   button = createButton("GENERATE");
-  button.position(input.x + input.width, 65);
+  button.position(input.x + 192 + input.width, +218);
   button.mousePressed(newWord);
 
-  greeting = createElement("h1", "TYPE HERE");
+  greeting = createElement("h1", "");
   greeting.position(20, 5);
 
   noStroke();

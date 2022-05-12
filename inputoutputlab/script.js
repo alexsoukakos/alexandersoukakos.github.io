@@ -9,6 +9,7 @@ function setup() {
 
   button = createButton("GENERATE");
   button.position(input.x + 192 + input.width, +219);
+  button.style.fill(#969696);
   button.mousePressed(newWord);
 
   greeting = createElement("h1", "");
